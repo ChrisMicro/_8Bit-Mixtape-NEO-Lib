@@ -32,9 +32,12 @@ extern Adafruit_NeoPixel pixels;
 void     neobegin();
 uint8_t  getButton();
 uint16_t analogReadScaled(uint8_t channel);
+uint16_t getPoti(uint8_t channel);
+
 void     displayBinaryValue(uint16_t value, uint32_t color);
 void     setColorAllPixel(uint32_t color);
 void     rainbowCycle(uint8_t wait, uint8_t rounds, uint8_t rainbowPixels);
-uint32_t Wheel(byte WheelPos);
+uint32_t Wheel(byte WheelPos); // depreciated
+uint32_t colorWheel(uint8_t colorNumber); 
 
 #endif // _NEOLIB_H_ 
