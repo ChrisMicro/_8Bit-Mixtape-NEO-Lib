@@ -10,7 +10,7 @@ void setup()
 
 void loop() 
 {
-  setColorAllPixel(200); // pixels on
+  setColorAllPixel(Wheel(220)); // all pixels set to pink using the Wheel() function to choose a color from the spectrum 0-255
   pixels.show(); // This sends the updated pixel color to the hardware.
   delay(1000);
 
