@@ -139,7 +139,14 @@ void rainbowCycle(uint8_t wait, uint8_t rounds, uint8_t rainbowPixels) {
     delay(wait);
   }
 }
+/*
 
+RGB_Color=Wheel(colorNumber)
+
+converts a colorNumber on a color wheel from 0 to 255 into a RGB color.
+
+https://color.adobe.com/de/create/color-wheel/?base=2&rule=Analogous
+*/
 uint32_t Wheel(byte WheelPos) {
   WheelPos = 255 - WheelPos;
   if (WheelPos < 85) {

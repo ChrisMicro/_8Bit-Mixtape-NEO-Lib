@@ -6,6 +6,8 @@
 #include <avr/power.h>
 #endif
 
+#include "neocolors.h"
+
 // hardware description / pin connections
 #define NEOPIXELPIN     0
 #define SPEAKERPIN      1
