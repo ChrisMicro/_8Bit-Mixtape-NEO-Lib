@@ -17,20 +17,28 @@
 
 #define NUMPIXELS           8
 
+#define BUTTON_NONE         0
 #define BUTTON_LEFT         1
 #define BUTTON_RIGHT        2
 
+
 // hardware calibration
-#define Vbutton_left      380
-#define Vbutton_right     300
-#define Vbutton_both      240
-#define Vcc                37 // 3.7 V for LiPo
-#define Vdiv               26 // measure max Voltage on Analog In
+
+#define Vbutton_releaseLevel  450
+#define Vbutton_left          380
+#define Vbutton_right         300
+#define Vbutton_both          224
+#define Vbutton_pressedLevel  Vbutton_left 
+
+#define Vcc                    37 // 3.7 V for LiPo
+#define Vdiv                   26 // measure max Voltage on Analog In
 
 extern Adafruit_NeoPixel pixels;
 
 void     neobegin();
 uint8_t  getButton();
+uint8_t  wasButtonPressed();
+
 uint16_t analogReadScaled(uint8_t channel);
 uint16_t getPoti(uint8_t channel);
 
