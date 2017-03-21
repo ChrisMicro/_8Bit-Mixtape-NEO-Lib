@@ -11,8 +11,8 @@
 // hardware description / pin connections
 #define NEOPIXELPIN         0
 #define SPEAKERPIN          1
-#define POTI_RIGHT         A1
-#define POTI_LEFT          A2
+#define POTI_RIGHT         A2
+#define POTI_LEFT          A1
 #define BUTTONS_ADC        A3
 
 #define NUMPIXELS           8
