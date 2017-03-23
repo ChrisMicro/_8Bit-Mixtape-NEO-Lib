@@ -4,5 +4,4 @@ You can simple add this library by unzipping or cloning it to your Adruino libra
 
 See the instructions here: https://github.com/8BitMixtape/8Bit-Mixtape-NEO/wiki/4_1-Libraries
 
-To use this library you need to install the Adafruit Neopixels library first:
-https://github.com/adafruit/Adafruit_NeoPixel
+
